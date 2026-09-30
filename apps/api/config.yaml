@@ -1,0 +1,12 @@
+env:
+  safe_range:
+    rh_min: 45
+    rh_max: 60
+    temp_min: 18
+    temp_max: 30
+safety:
+  uv_hard_cap_seconds: 3
+  max_continuous_light_seconds: 60
+app:
+  name: "Pandulipi"
+  version: "1.0.0"

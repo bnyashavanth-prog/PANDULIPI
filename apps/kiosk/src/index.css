@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink-950: #0A0E22;
+  --color-ink-900: #0E1430;
+  --color-ink-800: #161E45;
+  --color-ink-700: #222C5E;
+  --color-brand-indigo: #1F2A5C;
+  --color-saffron-500: #E8891B;
+  --color-saffron-300: #F4B860;
+  --color-lamp-glow: #FFD98A;
+  --color-leaf-100: #F1E7CC;
+  --color-leaf-300: #D9C58F;
+  --color-leaf-500: #B79B57;
+  --color-teal-500: #1B7F79;
+  --color-ok: #3DBE7A;
+  --color-warn: #F2B33D;
+  --color-danger: #E5564A;
+  --color-text-main: #F5F1E6;
+  --color-text-muted: #A9B0CF;
+  --color-line: rgba(255,255,255,0.08);
+
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-kannada: 'Noto Sans Kannada', sans-serif;
+  --font-kannada-serif: 'Noto Serif Kannada', serif;
+  --font-devanagari: 'Noto Sans Devanagari', sans-serif;
+  --font-devanagari-serif: 'Noto Serif Devanagari', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-ink-950);
+    color: var(--color-text-main);
+    font-family: var(--font-body);
+  }
+}
+
+.noise-bg {
+  position: relative;
+}
+.noise-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
