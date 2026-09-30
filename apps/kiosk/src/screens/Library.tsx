@@ -14,7 +14,7 @@ export default function Library() {
   const containerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    fetch('http://localhost:8000/bundles')
+    fetch('https://pandulipi.onrender.com/bundles')
       .then(r => r.json())
       .then(d => setBundles(d.bundles))
       .catch(console.error)

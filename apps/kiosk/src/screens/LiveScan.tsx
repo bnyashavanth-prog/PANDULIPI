@@ -17,7 +17,7 @@ function useScanStatus() {
 
   useEffect(() => {
     // We would use an actual WebSocket here, but we fetch to trigger the mock sequence
-    fetch('http://localhost:8000/scan/start', { method: 'POST' }).catch(console.error)
+    fetch('https://pandulipi.onrender.com/scan/start', { method: 'POST' }).catch(console.error)
 
     // And simulate the incoming WS events instead of dealing with actual WS in mock for UI brevity
     let i = 0

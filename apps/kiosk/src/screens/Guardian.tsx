@@ -50,9 +50,9 @@ export default function Guardian() {
   const [rescue, setRescue] = useState<any>(null)
 
   useEffect(() => {
-    fetch('http://localhost:8000/env/history').then(r => r.json()).then(d => setHistory(d.history)).catch(console.error)
-    fetch('http://localhost:8000/alerts').then(r => r.json()).then(d => setAlerts(d.alerts)).catch(console.error)
-    fetch('http://localhost:8000/scans/1/rescue').then(r => r.json()).then(d => setRescue(d)).catch(console.error)
+    fetch('https://pandulipi.onrender.com/env/history').then(r => r.json()).then(d => setHistory(d.history)).catch(console.error)
+    fetch('https://pandulipi.onrender.com/alerts').then(r => r.json()).then(d => setAlerts(d.alerts)).catch(console.error)
+    fetch('https://pandulipi.onrender.com/scans/1/rescue').then(r => r.json()).then(d => setRescue(d)).catch(console.error)
   }, [])
 
   return (

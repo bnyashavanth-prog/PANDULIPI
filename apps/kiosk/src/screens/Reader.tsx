@@ -19,7 +19,7 @@ export default function Reader() {
   
   useEffect(() => {
     // Fetch mock data
-    fetch('http://localhost:8000/scans/1/text')
+    fetch('https://pandulipi.onrender.com/scans/1/text')
       .then(res => res.json())
       .then(data => setLines(data.lines))
       .catch(console.error)
