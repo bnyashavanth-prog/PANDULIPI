@@ -19,7 +19,7 @@ export default function Settings() {
         <h2 className="text-2xl font-display text-lamp-glow flex items-center">
           <SettingsIcon className="mr-3" /> System Settings
         </h2>
-        <Button variant="primary"><Save className="mr-2" /> Save</Button>
+        <Button variant="primary" onClick={() => alert("Settings saved to mock hardware!")}><Save className="mr-2" /> Save</Button>
       </header>
 
       <div className="max-w-4xl mx-auto w-full space-y-8 pb-12">
