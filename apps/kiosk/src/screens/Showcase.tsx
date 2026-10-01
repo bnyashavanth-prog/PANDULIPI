@@ -11,7 +11,7 @@ export default function ShowcasePreview() {
   const [qrCode, setQrCode] = useState('')
 
   useEffect(() => {
-    QRCode.toDataURL('https://pandulipi.local/showcase/bundle/1', {
+    QRCode.toDataURL('https://pandulipi-lilac.vercel.app', {
       color: { dark: '#E8891B', light: '#0A0E22' },
       width: 200,
       margin: 2
