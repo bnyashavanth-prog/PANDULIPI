@@ -61,7 +61,7 @@ export default function Preflight() {
       initial={{ opacity: 0, x: 50 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -50 }}
-      transition={{ duration: 0.5 }}
+      transition={{ type: "spring", stiffness: 420, damping: 30 }}
     >
       <header className="flex justify-between items-center mb-8 z-10">
         <Button variant="ghost" onClick={() => navigate('/setup')}>

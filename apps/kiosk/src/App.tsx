@@ -46,7 +46,7 @@ function AnimatedRoutes() {
 export default function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-ink-950 text-text-main overflow-hidden relative">
+      <div className="min-h-screen bg-ink-950 text-text-main overflow-x-hidden relative">
         <AnimatedRoutes />
       </div>
     </Router>

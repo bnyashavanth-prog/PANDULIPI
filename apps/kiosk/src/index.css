@@ -29,6 +29,8 @@
   --font-mono: 'JetBrains Mono', monospace;
 }
 
+@custom-variant short (@media (max-height: 500px));
+
 @layer base {
   body {
     background-color: var(--color-ink-950);

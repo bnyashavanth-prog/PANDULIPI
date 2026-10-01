@@ -14,7 +14,7 @@ export default function Home() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, x: -50 }}
-      transition={{ duration: 0.6 }}
+      transition={{ type: "spring", stiffness: 420, damping: 30 }}
     >
       {/* Background lamplight & motes would go here */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
